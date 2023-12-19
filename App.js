@@ -1,32 +1,23 @@
-/*
-create the nested element in the react
-<div id="parent">
-    <div id="child">
-        <h1> I'm a h1 </h1>
-        <h2> I'm a h1 </h2>
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// React Element
+const Title = () => (<h1 className="heading">
+    Namaeste react in JSX
+</h1>);
+
+const number = 10000;
+
+//Component Composition
+const HeadingComponent3 = () => (
+    <div id="container">
+        {Title()}
+        <Title></Title>
+        <Title />
+        <h1 className="heading">this is a functional Component</h1>
     </div>
-    <div id="child">
-        <h1> I'm a h1 </h1>
-        <h2> I'm a h1 </h2>
-    </div>
-</div>
- */
+);
 
-const parent = React.createElement("div",{ id: "parent" },[
-    React.createElement("div",{ id: "child1" },
-        [React.createElement("h1", {}, "I'm a h1"),
-        React.createElement("h2", {}, "I'm a h2")
-        ]),
-    React.createElement("div",{ id: "child2" },
-        [React.createElement("h1", {}, "I'm a h1"),
-        React.createElement("h2", {}, "I'm a h2")
-        ])
-    ]);
-
-console.log(parent);
-
-    //root is the place all the react code will run
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-    //render means it will sh
-root.render(parent);
+//this is the way you rendered the Component in the browser
+root.render(<HeadingComponent3 />);
