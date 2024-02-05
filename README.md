@@ -18,3 +18,24 @@
 - HTTPs
 - Tree Shaking - remove unused code
 - Different dev and prod Bundles
+
+# Namaeste Food Ordering
+/**
+ * Header 
+ * - logo
+ * - Nav links
+ * body
+ * - Search
+ * - Resturant container
+ *   - resturant card
+ *     - image of resturant
+ *     - name of resturant
+ *     - rating
+ *     - cuisine , delivery time
+ * footer
+ * - Copywrite
+ * - some links
+ * - Address
+ * - Contact
+ */
+
